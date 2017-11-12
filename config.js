@@ -13,7 +13,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://kanbc.xyz',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox5222c3455fcc4ddbbb0d1b983ee202a4.mailgun.org',
+                    pass: 'd247f8bed99d6e69685ce31e4dcb796f'
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
