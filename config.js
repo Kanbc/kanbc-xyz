@@ -51,16 +51,16 @@ config = {
         // Example mail config
         // Visit https://docs.ghost.org/v0.11/docs/mail-config for instructions
         // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
+         mail: {
+             transport: 'SMTP',
+             options: {
+                 service: 'Mailgun',
+                 auth: {
+                     user: 'postmaster@sandbox5222c3455fcc4ddbbb0d1b983ee202a4.mailgun.org',
+                     pass: 'd247f8bed99d6e69685ce31e4dcb796f'
+                 }
+             }
+         },
         // ```
 
         // #### Database
