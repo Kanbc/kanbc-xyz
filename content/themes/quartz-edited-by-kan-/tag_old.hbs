@@ -16,8 +16,10 @@
                     <h2 class="post-title">
                         <a href="{{url}}">{{{title}}}</a>
                     </h2>
+                    <p class="post-excerpt">{{excerpt words="25"}}...</p>
                     <div class="post-meta">
-                        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMM Y"}}</time>
+                        <span class="post-author">By {{author}}</span>
+                        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"> - {{date format="MMMM D, YYYY"}}</time>
                     </div>
                 </section> 
             </div>
