@@ -16,6 +16,26 @@
         {{! CSS  }}
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Lora:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+
+        {{! Highlight.js  }}
+        <link rel="stylesheet" href="{{asset "js/highlight/styles/atom-one-dark.css"}}">
+        <style>  
+            pre {
+                word-wrap: normal;
+                -moz-hyphens: none;
+                -ms-hyphens: none;
+                -webkit-hyphens: none;
+                hyphens: none;
+                line-height: 1.4em;
+                margin: 1.5em 0 2.5em;
+                border: 1px solid #000;
+                border-radius: 5px;
+            }
+            pre code, pre tt {
+                padding:20px !important;
+                white-space: pre;
+            }
+        </style>  
         
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
@@ -55,5 +75,8 @@
 
         <script src="{{asset "js/theme-options.js"}}"></script>
         <script src="{{asset "js/main.min.js"}}"></script>
+        {{! Highlight.js  }}
+        <script src="{{asset "js/highlight/highlight.pack.js"}}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
