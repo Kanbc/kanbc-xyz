@@ -36,7 +36,7 @@
                 white-space: pre;
             }
         </style>  
-        
+
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
 
@@ -75,8 +75,17 @@
 
         <script src="{{asset "js/theme-options.js"}}"></script>
         <script src="{{asset "js/main.min.js"}}"></script>
-        {{! Highlight.js  }}
+        {{! Highlight.js }}
         <script src="{{asset "js/highlight/highlight.pack.js"}}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        {{! MathJax }}
+        <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                    processEscapes: true
+                }
+            });
+        </script>
     </body>
 </html>
